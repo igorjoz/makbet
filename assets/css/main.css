@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2F3336;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  word-spacing: 0.5px;
+  font-size: 19px;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px #000;
+}
+
+.article-header {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px #000;
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+h5 {
+  font-size: 25px;
+  margin: 20px 0 13px 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 18px 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+a:link {
+  color: #FF751F;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff5202;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #ff6a0e;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a b {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+a:visited b {
+  color: #e4e4e4;
+  text-decoration: underline;
+}
+
+a:hover b {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+a:active b {
+  background-color: #ff6a0e;
+  color: #FFF;
+}
+
+::-webkit-selection,
+b::-webkit-selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-webkit-selection,
+a b::-webkit-selection,
+a i::-webkit-selection,
+a::-webkit-selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+::-moz-selection,
+b::-moz-selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-moz-selection,
+a b::-moz-selection,
+a i::-moz-selection,
+a::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+::-moz-selection,
+b::-moz-selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+::selection,
+b::selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-moz-selection,
+a b::-moz-selection,
+a i::-moz-selection,
+a::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+h2::selection,
+a b::selection,
+a i::selection,
+a::selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+b {
+  font-weight: 700;
+}
+
+hr {
+  color: #FFF;
+  margin: 20px 0 50px;
+}
+
+.fLeft {
+  float: left;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main-content-wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: 1450px) {
+  .main-content-wrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .main-content-wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-content-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-content-wrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-content-wrapper {
+    width: 93%;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background-color: #f2f7f8;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #AAA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #1B1D1F;
+  padding: 27px 0;
+  font-size: 0px;
+}
+
+.logo__image {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.logo__text {
+  font-size: 48px;
+}
+
+.logo a {
+  color: #FFF;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.logo a:hover {
+  color: #E6AB45;
+  text-decoration: none;
+}
+
+/* #test {
+  background-image: url('../img/shakespeare.jpg');
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+} */
+.topnav {
+  background-color: #E3681B;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin-bottom: 40px;
+}
+
+.menu {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  list-style-type: none;
+  margin: 0;
+  padding: 12px 10px 8px 10px;
+  min-height: 46px;
+  line-height: 200%;
+  vertical-align: middle;
+}
+
+.menu__item {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #0A2B42;
+}
+
+.menu__item:first-child {
+  border-left: 1px solid #0A2B42;
+}
+
+@media (max-width: 900px) {
+  .menu__item {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    border: none;
+  }
+  .menu__item:first-child {
+    border: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .menu__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+}
+
+.menu a {
+  color: #FFF;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  background-color: #E3401B;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.menu a:active {
+  background-color: #ff2600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template: auto / auto auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Sriracha', cursive;
+  font-weight: 400;
+  width: 100%;
+  background-color: #454B4F;
+  margin-top: 20px;
+  padding: 25px 0 20px 0;
+}
+
+@media (max-width: 1005px) {
+  .footer {
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template: auto auto / auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    -ms-grid-rows: auto auto auto auto;
+    -ms-grid-columns: auto;
+        grid-template: auto auto auto auto / auto;
+  }
+}
+
+.footer__intro {
+  font-size: 24px;
+}
+
+@media (min-width: 600px) {
+  .footer__intro {
+    padding-right: 20px;
+  }
+}
+
+.footer__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 900px) {
+  .footer__author:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.footer__author-name {
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-right: 2px;
+}
+
+.footer__csharp-icon {
+  height: 45px;
+}
+
+.regluar-text {
+  float: left;
+}
+
+.regular-text a b {
+  font-size: 24px;
+  text-shadow: 1px 1px #000;
+  padding-right: 8px;
+}
+
+.shakespeare {
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+.shakespeare__image {
+  height: 475px;
+  border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+  .shakespeare__image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .shakespeare__image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shakespeare__image {
+    height: 325px;
+  }
+}
+
+@media (max-width: 450px) {
+  .shakespeare__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.theatre {
+  padding: 30px 45px 20px 0;
+}
+
+.theatre__image {
+  height: 350px;
+}
+
+@media (max-width: 1200px) {
+  .theatre__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .theatre__image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .theatre__image {
+    height: 215px;
+  }
+}
+
+@media (max-width: 450px) {
+  .theatre__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.list {
+  margin-top: 8px;
+}
+
+.list__item {
+  margin-left: 30px;
+}
+
+.credits-important {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+.credits-important span {
+  color: #FF1E00;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.credits-important a {
+  color: #FF1E00;
+  text-decoration: underline;
+}
+
+.credits-important a:hover {
+  color: #E20E00;
+}
+
+.credits-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.credits-info a {
+  color: #12DE00;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.credits-info a:hover {
+  color: #12DE00;
+  text-decoration: underline;
+}
+
+#main-summary {
+  font-size: 1.12em;
+}
+
+.summary-intro {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+#schedule-of-events li {
+  padding-bottom: 10px;
+}
+
+#schedule-of-events li:last-child {
+  padding-bottom: 20px;
+}
+
+.important-hero-description > header > h3 {
+  margin: 20px 0 15px 0;
+}
+
+.important-hero-description:first-child > header > h3 {
+  font-size: 36px;
+  text-shadow: 2px 2px #000;
+}
+
+.important-hero-description > p:last-child {
+  padding-bottom: 10px;
+}
+
+.important-hero-description > p:first-of-type {
+  margin-top: 15px;
+}
+
+.hero-description > header > h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 19px 0 0 0;
+  text-shadow: .5px .5px #000;
+}
+
+.hero-description > p:last-child {
+  margin-bottom: 20px;
+}
+
+.hero-description > p:first-of-type {
+  margin-top: 9px;
+}
+
+.download-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.download-game__image {
+  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.download-game__image:hover {
+  opacity: 0.55;
+}
+
+.quiz-hr {
+  margin: 20px 0;
+}
+
+.bigger-font-size {
+  font-size: 22px;
+}
+
+#download-instruction > li {
+  font-size: 20px;
+}
+
+.redColor {
+  color: #ff1c1c;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

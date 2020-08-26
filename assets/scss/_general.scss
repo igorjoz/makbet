@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2F3336;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  word-spacing: 0.5px;
+  font-size: 19px;
+  color: #FFF;
+}
+
+// =========================
+//           headers
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px #000;
+}
+
+.article-header {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px #000;
+  letter-spacing: 1px;
+
+  @include word-breaking;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+h5 {
+  font-size: 25px;
+  margin: 20px 0 13px 0;
+  font-weight: 700;
+}
+
+// =========================
+// paragraphs & links & selection
+
+p {
+  margin: 18px 0;
+
+  @include word-breaking;
+}
+
+// links
+
+a {
+
+  &:link {
+    color: #FF751F;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #ff5202;
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: #ff6a0e;
+    color: #FFF;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  // bold links
+  & b {
+    color: #FFF;
+    text-decoration: underline;
+  }
+
+  &:visited b {
+    color: #e4e4e4;
+    text-decoration: underline;
+  }
+
+  &:hover b {
+    color: #ccc;
+    text-decoration: underline;
+  }
+
+  &:active b {
+    background-color: #ff6a0e;
+    color: #FFF;
+  }
+}
+
+
+// selection - webkit & moz
+
+::-webkit-selection,
+b::-webkit-selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-webkit-selection,
+a b::-webkit-selection,
+a i::-webkit-selection,
+a::-webkit-selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+::-moz-selection,
+b::-moz-selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-moz-selection,
+a b::-moz-selection,
+a i::-moz-selection,
+a::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+// selection - general
+
+::selection,
+b::selection {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::selection,
+a b::selection,
+a i::selection,
+a::selection {
+  background-color: rgba(0, 0, 0, 0.99);
+  color: rgba(5, 176, 255, 0.99);
+}
+
+
+// =========================
+// other            
+
+b {
+  font-weight: 700;
+}
+
+hr {
+  color: #FFF;
+  margin: 20px 0 50px;
+}
+
+.fLeft {
+  float: left;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// main-content-wrapper - width & media queries
+
+.main-content-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $extra-large) {
+    width: 65%;
+  }
+
+  @media (max-width: $extra-large) {
+    width: 75%;
+  }
+
+  @media (max-width: $large) {
+    width: 80%;
+  }
+
+  @media (max-width: $medium) {
+    width: 85%;
+  }
+
+  @media (max-width: $small) {
+    width: 90%;
+  }
+
+  @media (max-width: $extra-small) {
+    width: 93%;
+  }
+}
+
+// custom scrollbar (Firefox and IE not supported)
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background-color: #f2f7f8;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #AAA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+// --------------------------  
+// --------------------------  
+//             logo            
+
+.logo {
+  // flex container
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: #1B1D1F;
+
+  padding: 27px 0;
+
+  // preventig bug
+  font-size: 0px;
+
+  &__image {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+
+  &__text {
+    font-size: 48px;
+  }
+
+  & a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: #E6AB45;
+      text-decoration: none;
+    }
+  }
+}
+
+/* #test {
+  background-image: url('../img/shakespeare.jpg');
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+// --------------------------
+// --------------------------
+// top navigation - menu 
+
+.topnav {
+  background-color: #E3681B;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin-bottom: 40px;
+}
+
+.menu {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 12px 10px 8px 10px;
+
+  min-height: 46px;
+  line-height: 200%;
+
+  vertical-align: middle;
+
+  &__item {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #0A2B42;
+
+    &:first-child {
+      border-left: 1px solid #0A2B42;
+    }
+
+    @media (max-width: $medium) {
+      flex-basis: 35%;
+      border: none;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    @media (max-width: $small + 70px) {
+      flex-basis: 100%;
+    }
+  }
+
+  @media (max-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  & a {
+    color: #FFF;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #E3401B;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    &:active {
+      background-color: #ff2600;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 25px;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+// --------------------------
+// --------------------------
+//         footer             
+
+.footer {
+  // grid container
+  display: grid;
+  grid-template: auto / auto auto auto auto;
+  // grid-template-areas: "intro author1 author2 author3";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  font-family: 'Sriracha', cursive;
+  font-weight: 400;
+
+  width: 100%;
+  background-color: #454B4F;
+  margin-top: 20px;
+  padding: 25px 0 20px 0;
+
+  @media (max-width: $medium + 105px) {
+    grid-template: auto auto / auto auto;
+    // grid-template-areas:
+    //   "intro author1"
+    //   "author2 author3";
+  }
+
+  @media (max-width: $small) {
+    grid-template: auto auto auto auto / auto;
+    // grid-template-areas:
+    //   "intro"
+    //   "author1"
+    //   "author2"
+    //   "author3";
+  }
+
+  &__intro {
+    font-size: 24px;
+
+    @media (min-width: $small) {
+      padding-right: 20px;
+    }
+  }
+
+  &__author {
+    // flex container
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+
+    @media (min-width: $medium) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__author-name {
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-right: 2px;
+  }
+
+  &__csharp-icon {
+    height: 45px;
+  }
+}

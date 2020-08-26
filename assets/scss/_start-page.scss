@@ -1,0 +1,71 @@
+// index - start - shakespeare and theatre   
+
+.regluar-text {
+  float: left;
+}
+
+.regular-text a b {
+  font-size: 24px;
+  text-shadow: 1px 1px #000;
+  padding-right: 8px;
+}
+
+.shakespeare {
+  padding-right: 25px;
+  padding-bottom: 15px;
+
+  &__image {
+    height: 475px;
+    border-radius: 15px;
+
+    @media (max-width: $large) {
+      height: 400px;
+    }
+
+    @media (max-width: $medium) {
+      height: 350px;
+    }
+
+    @media (max-width: $small) {
+      height: 325px;
+    }
+
+    @media (max-width: $extra-small) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.theatre {
+  padding: 30px 45px 20px 0;
+
+  &__image {
+    height: 350px;
+
+    @media (max-width: $large) {
+      height: 300px;
+    }
+
+    @media (max-width: $medium) {
+      height: 250px;
+    }
+
+    @media (max-width: $small) {
+      height: 215px;
+    }
+
+    @media (max-width: $extra-small) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.list {
+  margin-top: 8px;
+
+  &__item {
+    margin-left: 30px;
+  }
+}

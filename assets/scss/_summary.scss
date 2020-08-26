@@ -1,0 +1,57 @@
+// streszczenie - summary     
+
+.credits-important {
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+.credits-important span {
+  color: #FF1E00;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.credits-important a {
+  color: #FF1E00;
+  text-decoration: underline;
+}
+
+.credits-important a:hover {
+  color: #E20E00;
+}
+
+.credits-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.credits-info a {
+  color: #12DE00;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.credits-info a:hover {
+  color: #12DE00;
+  text-decoration: underline;
+}
+
+#main-summary {
+  font-size: 1.12em;
+}
+
+.summary-intro {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+#schedule-of-events li {
+  padding-bottom: 10px;
+}
+
+#schedule-of-events li:last-child {
+  padding-bottom: 20px;
+}
