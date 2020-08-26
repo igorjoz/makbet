@@ -12,6 +12,12 @@ body {
   color: #FFF;
 }
 
+@media (max-width: 600px) {
+  body {
+    font-size: 21px;
+  }
+}
+
 h1 {
   font-size: 48px;
   font-weight: 600;
@@ -162,7 +168,7 @@ b {
 
 hr {
   color: #FFF;
-  margin: 20px 0 50px;
+  margin: 20px 0 35px 0;
 }
 
 .fLeft {
@@ -178,12 +184,7 @@ hr {
 
 .main-content-wrapper {
   margin: 0 auto;
-}
-
-@media (min-width: 1450px) {
-  .main-content-wrapper {
-    width: 65%;
-  }
+  width: 65%;
 }
 
 @media (max-width: 1450px) {
@@ -255,36 +256,52 @@ hr {
   width: 70px;
   border-radius: 50%;
   margin-right: 30px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .logo__image {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.logo__image:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media (max-width: 900px) {
+  .logo__image:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 .logo__text {
   font-size: 48px;
 }
 
-.logo a {
-  color: #FFF;
-  text-decoration: none;
-  -webkit-transition: color 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out;
+.logo__a--title {
+  color: #FFF !important;
+  text-decoration: none !important;
+  -webkit-transition: color 0.15s ease-in-out !important;
+  transition: color 0.15s ease-in-out !important;
 }
 
-.logo a:hover {
-  color: #E6AB45;
-  text-decoration: none;
+.logo__a--title:hover {
+  color: #E6AB45 !important;
+  text-decoration: none !important;
 }
 
-/* #test {
-  background-image: url('../img/shakespeare.jpg');
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.logo__a--image:hover + .logo__a--title {
+  color: #E6AB45 !important;
+  text-decoration: none !important;
+}
 
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-} */
 .topnav {
   background-color: #E3681B;
   text-align: center;
@@ -355,12 +372,28 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 900px) {
+  .menu a {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .menu a:hover {
   background-color: #E3401B;
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
   font-size: 24px;
+}
+
+@media (max-width: 900px) {
+  .menu a:hover {
+    background-color: initial;
+    padding: initial;
+    font-size: 22px;
+    border-radius: 0;
+  }
 }
 
 .menu a:active {
@@ -371,6 +404,15 @@ hr {
   font-size: 25px;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .menu a:active {
+    background-color: initial;
+    padding: initial;
+    font-size: 22px;
+    border-radius: 0;
+  }
 }
 
 .footer {
@@ -489,7 +531,7 @@ hr {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .shakespeare__image {
     width: 100%;
     height: 100%;
@@ -522,7 +564,7 @@ hr {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .theatre__image {
     width: 100%;
     height: 100%;
@@ -541,12 +583,15 @@ hr {
   margin-top: 30px;
   text-align: center;
   text-shadow: 1.5px 1.5px #000;
+  color: #FF1E00;
+  font-size: 31px;
+  font-weight: 700;
 }
 
-.credits-important span {
-  color: #FF1E00;
-  font-size: 33px;
-  font-weight: 700;
+@media (max-width: 900px) {
+  .credits-important {
+    font-size: 28px;
+  }
 }
 
 .credits-important a {
@@ -561,21 +606,17 @@ hr {
 .credits-info {
   text-align: center;
   margin-bottom: 30px;
-}
-
-.credits-info a {
-  color: #12DE00;
-  text-decoration: none;
   font-size: 22px;
 }
 
-.credits-info a:hover {
+.credits-info a {
+  text-decoration: none;
   color: #12DE00;
-  text-decoration: underline;
 }
 
-#main-summary {
-  font-size: 1.12em;
+.credits-info a:hover {
+  text-decoration: underline;
+  color: #12DE00;
 }
 
 .summary-intro {
@@ -585,43 +626,49 @@ hr {
   margin-top: 30px;
 }
 
-#schedule-of-events li {
+.schedule-of-events {
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.schedule-of-events li {
   padding-bottom: 10px;
 }
 
-#schedule-of-events li:last-child {
+.schedule-of-events li:last-child {
   padding-bottom: 20px;
 }
 
-.important-hero-description > header > h3 {
+.important-hero__title {
   margin: 20px 0 15px 0;
+  font-size: 30px;
 }
 
-.important-hero-description:first-child > header > h3 {
+.important-hero__title--makbet {
   font-size: 36px;
   text-shadow: 2px 2px #000;
 }
 
-.important-hero-description > p:last-child {
-  padding-bottom: 10px;
-}
-
-.important-hero-description > p:first-of-type {
+.important-hero p :first-child {
   margin-top: 15px;
 }
 
-.hero-description > header > h4 {
-  font-size: 24px;
+.important-hero p:last-child {
+  padding-bottom: 10px;
+}
+
+.regular-hero__title {
+  font-size: 27px;
   font-weight: 700;
   margin: 19px 0 0 0;
   text-shadow: .5px .5px #000;
 }
 
-.hero-description > p:last-child {
+.regular-hero p:last-child {
   margin-bottom: 20px;
 }
 
-.hero-description > p:first-of-type {
+.regular-hero p:first-child {
   margin-top: 9px;
 }
 
@@ -638,15 +685,15 @@ hr {
 .download-game__image {
   -webkit-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
-  padding: 10px;
   border-radius: 50px;
+  width: 100%;
 }
 
 .download-game__image:hover {
   opacity: 0.55;
 }
 
-.quiz-hr {
+.hr--quiz {
   margin: 20px 0;
 }
 
@@ -654,11 +701,15 @@ hr {
   font-size: 22px;
 }
 
-#download-instruction > li {
+.download-instruction {
+  margin-left: 20px;
+}
+
+.download-instruction li {
   font-size: 20px;
 }
 
-.redColor {
+.span--red {
   color: #ff1c1c;
   font-weight: 600;
 }

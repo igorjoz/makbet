@@ -1,33 +1,44 @@
 //         bohaterowie        
 
-.important-hero-description>header>h3 {
-  margin: 20px 0 15px 0;
+.important-hero {
+
+  &__title {
+    margin: 20px 0 15px 0;
+    font-size: 30px;
+
+    &--makbet {
+      font-size: 36px;
+      text-shadow: 2px 2px #000;
+    }
+  }
+
+  p {
+    :first-child {
+      margin-top: 15px;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
 }
 
-.important-hero-description:first-child>header>h3 {
-  font-size: 36px;
-  text-shadow: 2px 2px #000;
-}
+.regular-hero {
 
-.important-hero-description>p:last-child {
-  padding-bottom: 10px;
-}
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    margin: 19px 0 0 0;
+    text-shadow: .5px .5px #000;
+  }
 
-.important-hero-description>p:first-of-type {
-  margin-top: 15px;
-}
+  & p {
+    &:last-child {
+      margin-bottom: 20px;
+    }
 
-.hero-description>header>h4 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 19px 0 0 0;
-  text-shadow: .5px .5px #000;
-}
-
-.hero-description>p:last-child {
-  margin-bottom: 20px;
-}
-
-.hero-description>p:first-of-type {
-  margin-top: 9px;
+    &:first-child {
+      margin-top: 9px;
+    }
+  }
 }

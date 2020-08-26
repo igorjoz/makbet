@@ -13,9 +13,9 @@ $siteMainContent = '
 
     <div class="regular-text">
 
-        <section class="important-hero-description">
+        <section class="important-hero">
             <header>
-                <h3>Makbet</h3>
+                <h3 class="important-hero__title important-hero__title--makbet">Makbet</h3>
             </header>
 
             <p>
@@ -64,9 +64,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="important-hero-description">
+        <section class="important-hero">
             <header>
-                <h3>Lady Makbet</h3>
+                <h3 class="important-hero__title">Lady Makbet</h3>
             </header>
 
             <p>
@@ -89,9 +89,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="important-hero-description">
+        <section class="important-hero">
             <header>
-                <h3>Trzy czarownice</h3>
+                <h3 class="important-hero__title">Trzy czarownice</h3>
             </header>
 
             <p>
@@ -105,9 +105,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="hero-description">
+        <section class="regular-hero">
             <header>
-                <h4>Król Dunkan</h4>
+                <h4 class="regular-hero__title">Król Dunkan</h4>
             </header>
 
             <p>
@@ -119,9 +119,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="hero-description">
+        <section class="regular-hero">
             <header>
-                <h4>Banko</h4>
+                <h4 class="regular-hero__title">Banko</h4>
             </header>
 
             <p>
@@ -133,9 +133,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="hero-description">
+        <section class="regular-hero">
             <header>
-                <h4>Makduf</h4>
+                <h4 class="regular-hero__title">Makduf</h4>
             </header>
 
             <p>
@@ -152,9 +152,9 @@ $siteMainContent = '
 
         <hr>
 
-        <section class="hero-description">
+        <section class="regular-hero">
             <header>
-                <h4>Malkolm i Donalbein</h4>
+                <h4 class="regular-hero__title">Malkolm i Donalbein</h4>
             </header>
 
             <p>

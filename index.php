@@ -45,36 +45,24 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="assets/fontello/css/fontello.css" type="text/css">
 
-    <!-- jquery 3.5.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
     <!-- logo -->
     <div class="logo unselectable">
-        <div class="fLeft">
-            <a href="index.php?p=start">
+            <a href="index.php?p=start" class="logo__a logo__a--image"><div class="test">
                 <img class="logo__image" src="assets/img/shakespeare.jpg" alt="William Shakespeare">
+                </div>
             </a>
-        </div>
 
-        <!-- <div class="fLeft" id="test">
-            <a href="index.php?p=start"></a>
-        </div> -->
-
-        <div class="fLeft">
-            <a href="index.php?p=start">
+            <a href="index.php?p=start" class="logo__a logo__a--title">
                 <h1 class="logo__text">Shakespeare bez tajemnic - Makbet</h1>
             </a>
-        </div>
-
-        <!-- filling .logo__text with proper value -->
-        <script src="assets/js/title.js"></script>
-
-        <div style="clear: both;"></div>
     </div>
+
+        <!-- fill .logo__text with proper value -->
+        <script src="assets/js/title.js"></script>
 
     <!-- top navigation -->
     <nav class="topnav unselectable">
@@ -104,13 +92,13 @@
         $pageName = $_GET['p'] ?? null;
 
         if ($pageName === 'bohaterowie') {
-            require_once('elements/bohaterowie.php');
+            require_once('assets/php/bohaterowie.php');
         } elseif($pageName === 'streszczenie') {
-            require_once('elements/streszczenie.php');
+            require_once('assets/php/streszczenie.php');
         } elseif ($pageName === 'quiz') {
-            require_once('elements/quiz.php');
+            require_once('assets/php/quiz.php');
         } else {
-            require_once('elements/start.php');
+            require_once('assets/php/start.php');
         }
     ?>
 

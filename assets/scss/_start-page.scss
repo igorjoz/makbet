@@ -30,7 +30,7 @@
       height: 325px;
     }
 
-    @media (max-width: $extra-small) {
+    @media (max-width: $extra-small + 50px) {
       width: 100%;
       height: 100%;
     }
@@ -55,7 +55,7 @@
       height: 215px;
     }
 
-    @media (max-width: $extra-small) {
+    @media (max-width: $extra-small + 50px) {
       width: 100%;
       height: 100%;
     }

@@ -8,12 +8,8 @@
 
   &__image {
     transition: opacity .1s ease-in-out;
-    padding: 10px;
     border-radius: 50px;
-
-    @media (max-width: $medium) {
-      // width: 200px;
-    }
+    width: 100%;
 
     &:hover {
       opacity: 0.55;
@@ -21,7 +17,7 @@
   }
 }
 
-.quiz-hr {
+.hr--quiz {
   margin: 20px 0;
 }
 
@@ -29,11 +25,18 @@
   font-size: 22px;
 }
 
-#download-instruction>li {
-  font-size: 20px;
+.download-instruction {
+  margin-left: 20px;
+
+  & li {
+    font-size: 20px;
+  }
 }
 
-.redColor {
-  color: #ff1c1c;
-  font-weight: 600;
+.span {
+
+  &--red {
+    color: #ff1c1c;
+    font-weight: 600;
+  }
 }

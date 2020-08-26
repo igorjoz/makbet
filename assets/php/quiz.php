@@ -9,14 +9,14 @@ $siteMainContent = '
                 <h2 class="article-header">Quiz - sprawdź się</h2>
             </header>
 
-            <hr class="quiz-hr">
+            <hr class="hr--quiz">
 
             <!-- quiz link -->
             <section>
                 <div class="download-game">
                     <a href="https://drive.google.com/file/d/1yBIbjN3bQ7rLL_eLrI49m9VjxkmN0sIA/view?usp=sharing"
                         target="_blank" title="Pobierz grę na temat Makbeta!">
-                        <img src="assets/img/imgByJan/download-game.png" id="download-game__image">
+                        <img src="assets/img/imgByJan/download-game.png" class="download-game__image">
                     </a>
                 </div>
             </section>
@@ -36,9 +36,11 @@ $siteMainContent = '
             <section>
                 <h5>Instrukcja</h5>
 
-                <p><span class="redColor">Uwaga!</span> Program można uruchomić tylko na komputerze z Windowsem!</p>
+                <p>
+                    <span class="span--red">Uwaga!</span> Program można uruchomić tylko na komputerze z Windowsem!
+                </p>
 
-                <ul id="download-instruction">
+                <ul class="download-instruction">
 
                     <li>
                         Kliknij na powyższy napis "POBIERZ GRĘ"

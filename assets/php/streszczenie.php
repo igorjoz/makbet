@@ -17,16 +17,16 @@ $siteMainContent = '
                     allowfullscreen></iframe>
             </section>
 
-            <section id="main-summary">
+            <section>
 
                 <hr>
 
                 <!-- credits to bryk.pl -->
-                <div class="credits-important">
-                    <span>Uwaga! Cały poniższy cytowany tekst jest własnością witryny <a href="https://www.bryk.pl/"
+                    <p class="credits-important">
+                    Uwaga! Cały poniższy cytowany tekst jest własnością witryny <a href="https://www.bryk.pl/"
                             target="_blank" title="bryk.pl - strona główna">Bryk.pl</a>! Tekst został zamieszczony
-                        jedynie w celach edukacjynych - nie czerpiemy z tego zysków.</span>
-                </div>
+                        jedynie w celach edukacjynych - nie czerpiemy z tego zysków.
+                    </p>
 
                 <br>
 
@@ -70,7 +70,7 @@ $siteMainContent = '
             </section>
 
             <!-- schedule of events -->
-            <section id="schedule-of-events">
+            <section>
 
                 <hr>
 
@@ -88,7 +88,7 @@ $siteMainContent = '
                 </div>
 
                 <h3>"Akt I</h3>
-                <ol>
+                <ol class="schedule-of-events">
                     <li>
                         Pod <b>Forres</b> toczy się wielka bitwa wojsk szkockich z norweskimi, Makbet, jeden ze
                         szkockich wodzów, wraz z Bankiem swym przyjacielem, dzielnie walczą, Makbet pokonuje Swena -
@@ -106,7 +106,7 @@ $siteMainContent = '
                 </ol>
 
                 <h3>Akt II</h3>
-                <ol>
+                <ol class="schedule-of-events">
                     <li>
                         Makbet i jego żona realizują swój plan: <b>Dunkan nie żyje</b>, a o zbrodnię oskarżeni są dwaj
                         strażnicy króla, których Makbet natychmiast zabija.
@@ -118,7 +118,7 @@ $siteMainContent = '
                 </ol>
 
                 <h3>Akt III</h3>
-                <ol>
+                <ol class="schedule-of-events">
                     <li>
                         Banko podejrzewa Makbeta o zabójstwo Dunkana, Makbet zaprasza go na ucztę, ale zaraz potem
                         nakazuje dwóm płatnym mordercom, aby <b>zabili Banka</b> i jego syna.
@@ -133,7 +133,7 @@ $siteMainContent = '
                 </ol>
 
                 <h3>Akt IV</h3>
-                <ol>
+                <ol class="schedule-of-events">
                     <li>
                         <b>Makbet ponownie spotyka się z Czarownicami, nowe przepowiednie: Makbeta nie zwycięży nikt
                             narodzony z kobiety, pozostanie królem dotąd, dopóki las Birnam nie podejdzie pod mury zamku
@@ -149,7 +149,7 @@ $siteMainContent = '
                 </ol>
 
                 <h3>Akt V</h3>
-                <ol>
+                <ol class="schedule-of-events">
                     <li>
                         <b>Lady Makbet popada w szaleństwo.</b>
                     </li>
